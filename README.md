@@ -1,6 +1,3 @@
-Here's an enhanced and detailed README for your Linked List implementation in Java:
-
----
 
 # Implementing a Linked List in Java using Class
 
