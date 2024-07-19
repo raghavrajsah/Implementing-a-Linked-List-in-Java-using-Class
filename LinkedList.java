@@ -67,6 +67,10 @@ public class LinkedList<E>{
         return temp;    
     }
 
+    public void add(E element){
+        add(size, element);
+    }
+
     //Insert the argument element at the specified index
     //Like ArrayList, can also be used to append to end of the list
     public void add(int index, E element){
@@ -83,6 +87,7 @@ public class LinkedList<E>{
         }
         this.size++;
     }
+
 
 
 }
