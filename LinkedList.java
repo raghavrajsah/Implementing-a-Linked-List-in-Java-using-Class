@@ -16,6 +16,15 @@ public class LinkedList<E>{
             this.next=next;
         }
 
+        public Node(E data){
+            this(data, null);
+        }
+
 
     }
+    public int size(){
+        return this.size;
+    }
+
+    
 }
