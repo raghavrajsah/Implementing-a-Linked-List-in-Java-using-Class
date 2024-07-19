@@ -67,5 +67,22 @@ public class LinkedList<E>{
         return temp;    
     }
 
+    //Insert the argument element at the specified index
+    //Like ArrayList, can also be used to append to end of the list
+    public void add(int index, E element){
+        if(index<0 || index>this.size){
+            throw new IllegalArgumentException("Out of Range");
+        }
+        if(index==0){
+            front= new Node<E>(element,front);
+        }
+        else{
+            Node<E> prev= this.getNode(index-1);
+            prev.next = new Node<E>(element, prev.next);
+
+        }
+        this.size++;
+    }
+
 
 }
