@@ -88,6 +88,21 @@ public class LinkedList<E>{
         this.size++;
     }
 
+    public String toString(){
+        String toReturn = "[";
+        if(this.size==0){
+            return "[]";
+        }
+        Node<E> current=front;
+
+        for(int i=0; i<this.size-1;i++){
+            toReturn += current.data + " ==> ";
+            current=current.next;
+        }
+        toReturn+=current.data+"]";
+        return toReturn;
+    }
+
 
 
 }
