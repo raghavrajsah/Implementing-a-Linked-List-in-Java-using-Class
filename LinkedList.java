@@ -54,5 +54,18 @@ public class LinkedList<E>{
         return temp.data;
     }
 
+    //Retrieves the node object at the specified index
+    //private as external code cannot manipulate Node Objects
+    private Node<E> getNode(int index){
+        if(index<0 || index>=this.size){
+            throw new IllegalArgumentException("Out of Range");
+        }
+        Node<E> temp=front;
+        for(int i=0; i<index;i++){
+            temp=temp.next;
+        }
+        return temp;    
+    }
+
 
 }
