@@ -88,3 +88,74 @@ public class Main {
 ## Conclusion
 
 Linked Lists are a fundamental data structure that provides flexibility over arrays for dynamic memory management. This implementation in Java demonstrates the basic operations and provides a foundation for more advanced linked list variations, such as doubly linked lists and circular linked lists.
+
+# Stack Implementation
+
+## Overview
+
+This project provides an implementation of a stack using arrays in Java. The stack supports basic operations such as push, pop, and peek, and it can dynamically increase its capacity when needed.
+
+## Class: Stack
+
+### Fields
+
+- `private static final int DEFAULT_CAP = 3;`
+  - The default capacity of the stack.
+  
+- `private static String[] elements;`
+  - The array that holds the stack elements.
+  
+- `private static int size;`
+  - The number of elements currently in the stack.
+
+### Constructors
+
+- `public Stack()`
+  - Initializes the stack with the default capacity.
+  
+- `public Stack(int capacity)`
+  - Initializes the stack with a specified capacity.
+
+### Methods
+
+- `public int getSize()`
+  - Returns the current size of the stack.
+
+- `public void push(String element)`
+  - Adds a new element to the top of the stack. If the stack is full, it doubles its capacity.
+
+- `public String pop()`
+  - Removes and returns the top element of the stack. Throws an `IllegalStateException` if the stack is empty.
+
+- `public String peek()`
+  - Returns the top element of the stack without removing it.
+
+- `public String toString()`
+  - Returns a string representation of the stack.
+
+- `public void doubleCapacity()`
+  - Doubles the capacity of the stack when it is full.
+
+## Usage Example
+
+Here is an example of how to use the stack:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Stack stack = new Stack();
+
+        stack.push("A");
+        stack.push("B");
+        stack.push("C");
+        stack.push("D"); // This will trigger a capacity increase
+
+        System.out.println("Stack size: " + stack.getSize()); // Output: 4
+        System.out.println("Stack peek: " + stack.peek());    // Output: D
+
+        System.out.println("Stack elements: " + stack);       // Output: [A, B, C, D, null, null]
+
+        System.out.println("Popped element: " + stack.pop()); // Output: D
+        System.out.println("Stack size after pop: " + stack.getSize()); // Output: 3
+    }
+}
