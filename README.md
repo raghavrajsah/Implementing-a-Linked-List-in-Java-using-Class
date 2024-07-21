@@ -1,7 +1,7 @@
 
 # Implementing LinkedList/Stack/Queue and HashMap in Java using Class
 
-## Introduction(LinkedList)
+## 1. LinkedList
 
 A Linked List is a linear data structure similar to arrays. However, unlike arrays, the elements in a Linked List are not stored in contiguous memory locations. Instead, elements are connected through pointers, making it a dynamic data structure that can grow and shrink in size as needed.
 
