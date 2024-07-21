@@ -89,7 +89,7 @@ public class Main {
 
 Linked Lists are a fundamental data structure that provides flexibility over arrays for dynamic memory management. This implementation in Java demonstrates the basic operations and provides a foundation for more advanced linked list variations, such as doubly linked lists and circular linked lists.
 
-# Stack Implementation
+# 2. Stack Implementation
 
 ## Overview
 
