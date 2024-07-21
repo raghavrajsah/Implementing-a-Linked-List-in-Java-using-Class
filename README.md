@@ -1,5 +1,5 @@
 
-# Implementing LinkedList/Stack/Queue in Java using Class
+# Implementing LinkedList/Stack/Queue and HashMap in Java using Class
 
 ## Introduction(LinkedList)
 
